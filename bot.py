@@ -1,3 +1,6 @@
+print("TOKEN:", TOKEN)
+print("ADMIN:", ADMIN_ID)
+print("MONGO:", MONGO_URI)
 import logging
 import threading
 from flask import Flask
