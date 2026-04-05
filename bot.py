@@ -18,9 +18,11 @@ from telegram.ext import (
 )
 
 # ===== CONFIG =====
-TOKEN = 8227958604:AAECXGzNpCW0Qg3JOevvzdWjzFNBl5eiOF8
-ADMIN_ID = 7254020951  # replace with your Telegram ID
-MONGO_URI = MONGO_URI = "mongodb+srv://hp848293093_db_user:4SMYd31qZqK8eVJF@cluster0.w6siu4p.mongodb.net/?appName=Cluster0"
+import os
+
+TOKEN = os.getenv("TOKEN")
+ADMIN_ID = int(os.getenv("ADMIN_ID"))
+MONGO_URI = os.getenv("MONGO_URI")
 
 # ===== SETUP =====
 logging.basicConfig(level=logging.INFO)
